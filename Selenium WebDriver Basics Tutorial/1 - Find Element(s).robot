@@ -2,8 +2,6 @@
 Documentation       Find Element(s)
 
 Library             SeleniumLibrary
-Library             RPA.Desktop
-Library             RPA.Netsuite
 
 Suite Setup         Open URL
 Suite Teardown      Close Browser

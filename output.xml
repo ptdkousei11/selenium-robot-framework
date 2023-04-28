@@ -1,52 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20230428 15:05:32.256" rpa="false" schemaversion="3">
-<suite id="s1" name="9 - Alert &amp; Popup" source="d:\ptdat-batch40\selenium-robot-framework\Selenium WebDriver Basics Tutorial\9 - Alert &amp; Popup.robot">
+<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20230428 15:12:16.106" rpa="false" schemaversion="3">
+<suite id="s1" name="1 - Find Element(s)" source="d:\ptdat-batch40\selenium-robot-framework\Selenium WebDriver Basics Tutorial\1 - Find Element(s).robot">
 <kw name="Open URL" type="SETUP">
-<kw name="Open Browser" library="Selenium2Library">
+<kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <arg>edge</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230428 15:05:32.565" level="INFO">Opening browser 'edge' to base url 'https://demo.guru99.com/test/delete_customer.php'.</msg>
-<status status="PASS" starttime="20230428 15:05:32.565" endtime="20230428 15:05:48.677"/>
+<msg timestamp="20230428 15:12:16.418" level="INFO">Opening browser 'edge' to base url 'https://demo.guru99.com/test/ajax.html'.</msg>
+<status status="PASS" starttime="20230428 15:12:16.418" endtime="20230428 15:12:26.506"/>
 </kw>
-<status status="PASS" starttime="20230428 15:05:32.564" endtime="20230428 15:05:48.678"/>
+<status status="PASS" starttime="20230428 15:12:16.417" endtime="20230428 15:12:26.506"/>
 </kw>
-<test id="s1-t1" name="Alert" line="14">
-<kw name="Input Text" library="Selenium2Library">
-<arg>cusid</arg>
-<arg>53920</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230428 15:05:48.683" level="INFO">Typing text '53920' into text field 'cusid'.</msg>
-<status status="PASS" starttime="20230428 15:05:48.682" endtime="20230428 15:05:48.782"/>
+<test id="s1-t1" name="Click &quot;Yes&quot; button" line="15">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:yes</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230428 15:12:26.508" level="INFO">Clicking element 'id:yes'.</msg>
+<status status="PASS" starttime="20230428 15:12:26.507" endtime="20230428 15:12:26.565"/>
 </kw>
-<kw name="Click Button" library="Selenium2Library">
-<arg>submit</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20230428 15:05:48.783" level="INFO">Clicking button 'submit'.</msg>
-<status status="PASS" starttime="20230428 15:05:48.783" endtime="20230428 15:05:48.845"/>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:buttoncheck</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230428 15:12:26.566" level="INFO">Clicking element 'id:buttoncheck'.</msg>
+<status status="PASS" starttime="20230428 15:12:26.566" endtime="20230428 15:12:26.618"/>
 </kw>
-<kw name="Handle Alert" library="Selenium2Library">
-<var>${msg}</var>
-<doc>Handles the current alert and returns its message.</doc>
-<msg timestamp="20230428 15:05:48.848" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
-<msg timestamp="20230428 15:05:48.905" level="INFO">${msg} = Do you really want to delete this Customer?</msg>
-<status status="PASS" starttime="20230428 15:05:48.847" endtime="20230428 15:05:48.905"/>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Radio button is checked and it's value is Yes</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20230428 15:12:26.633" level="INFO">Current page contains text 'Radio button is checked and it's value is Yes'.</msg>
+<status status="PASS" starttime="20230428 15:12:26.619" endtime="20230428 15:12:26.634"/>
 </kw>
-<kw name="Log" library="BuiltIn">
-<arg>${msg}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20230428 15:05:48.956" level="INFO">Do you really want to delete this Customer?</msg>
-<status status="PASS" starttime="20230428 15:05:48.956" endtime="20230428 15:05:48.956"/>
-</kw>
-<kw name="Handle Alert" library="Selenium2Library">
-<doc>Handles the current alert and returns its message.</doc>
-<msg timestamp="20230428 15:05:48.964" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
-<status status="PASS" starttime="20230428 15:05:48.964" endtime="20230428 15:05:50.647"/>
-</kw>
-<status status="PASS" starttime="20230428 15:05:48.679" endtime="20230428 15:05:50.654"/>
+<status status="PASS" starttime="20230428 15:12:26.506" endtime="20230428 15:12:26.634"/>
 </test>
-<doc>Alert &amp; Popup</doc>
-<status status="PASS" starttime="20230428 15:05:32.264" endtime="20230428 15:05:50.659"/>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230428 15:12:26.637" endtime="20230428 15:12:29.148"/>
+</kw>
+<doc>Find Element(s)</doc>
+<status status="PASS" starttime="20230428 15:12:16.113" endtime="20230428 15:12:29.148"/>
 </suite>
 <statistics>
 <total>
@@ -55,7 +46,7 @@
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="9 - Alert &amp; Popup">9 - Alert &amp; Popup</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="1 - Find Element(s)">1 - Find Element(s)</stat>
 </suite>
 </statistics>
 <errors>

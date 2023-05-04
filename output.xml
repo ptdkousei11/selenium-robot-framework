@@ -1,164 +1,1291 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20230504 10:48:54.187" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20230504 14:34:01.389" rpa="false" schemaversion="3">
 <suite id="s1" name="12 - Find broken link" source="d:\ptdat-batch40\selenium-robot-framework\Selenium WebDriver Basics Tutorial\12 - Find broken link.robot">
 <kw name="Open URL" type="SETUP">
 <kw name="Open Browser" library="Selenium2Library">
 <arg>${URL}</arg>
 <arg>edge</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230504 10:48:54.497" level="INFO">Opening browser 'edge' to base url 'https://demo.guru99.com/test/newtours/'.</msg>
-<status status="PASS" starttime="20230504 10:48:54.496" endtime="20230504 10:49:05.615"/>
+<msg timestamp="20230504 14:34:01.704" level="INFO">Opening browser 'edge' to base url 'https://demo.guru99.com/test/newtours/'.</msg>
+<status status="PASS" starttime="20230504 14:34:01.703" endtime="20230504 14:34:12.528"/>
 </kw>
-<status status="PASS" starttime="20230504 10:48:54.495" endtime="20230504 10:49:05.615"/>
+<status status="PASS" starttime="20230504 14:34:01.702" endtime="20230504 14:34:12.528"/>
 </kw>
 <test id="s1-t1" name="Find broken link" line="15">
 <kw name="Get WebElements" library="Selenium2Library">
 <var>${links}</var>
 <arg>//tbody/tr/td/table/tbody/tr/td//child::a</arg>
 <doc>Returns a list of WebElement objects matching the ``locator``.</doc>
-<msg timestamp="20230504 10:49:05.634" level="INFO">${links} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="e2eb06fa42f7d18396400ae870604f2e", element="4daa406f-0fe9-4a0a-b11f-7a53043104c3")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
-<status status="PASS" starttime="20230504 10:49:05.616" endtime="20230504 10:49:05.635"/>
+<msg timestamp="20230504 14:34:12.546" level="INFO">${links} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="04287a64e9a88e9f073017f11f36014c", element="5af7e155-b0ed-4533-b20b-bb88620e79af")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20230504 14:34:12.529" endtime="20230504 14:34:12.547"/>
 </kw>
-<kw name="Log" library="BuiltIn">
-<arg>${links}</arg>
-<doc>Logs the given message with the given level.</doc>
-<msg timestamp="20230504 10:49:05.636" level="INFO">[&lt;selenium.webdriver.remote.webelement.WebElement (session="e2eb06fa42f7d18396400ae870604f2e", element="4daa406f-0fe9-4a0a-b11f-7a53043104c3")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="e2eb06fa42f7d18396400ae870604f2e", element="38311bc1-94dd-40bd-a938-1daf5c2ac8be")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="e2eb06fa42f7d18396400ae870604f2e", element="5d362904-9902-4462-9310-fb3a2dc25cb6")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="e2eb06fa42f7d18396400ae870604f2e", element="0135eeab-430f-41bf-a279-eb7940b473eb")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="e2eb06fa42f7d18396400ae870604f2e", element="3a810dc4-89ca-4cee-8b0c-9cf3e8337bc7")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="e2eb06fa42f7d18396400ae870604f2e", element="3bde8fa4-0def-43b2-aa8b-fe78d5ee3e67")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="e2eb06fa42f7d18396400ae870604f2e", element="7c19b1a3-7d86-43c7-b24b-8f59a2cf5956")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="e2eb06fa42f7d18396400ae870604f2e", element="e8e447a1-1417-467a-8af8-277550250055")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="e2eb06fa42f7d18396400ae870604f2e", element="e34030af-3919-40f2-abb7-933475dedc5e")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="e2eb06fa42f7d18396400ae870604f2e", element="2e68ed90-908b-4814-a185-1e8b32a4c4ed")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="e2eb06fa42f7d18396400ae870604f2e", element="212abf90-53a8-4081-a5c5-d0ec427a9c0c")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="e2eb06fa42f7d18396400ae870604f2e", element="3c688fe9-a536-4cdb-9251-0b9b2d10915c")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="e2eb06fa42f7d18396400ae870604f2e", element="3d13e5a3-ddf6-4ba9-a32a-7861e33bd879")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="e2eb06fa42f7d18396400ae870604f2e", element="31881c92-cd40-4030-811b-8ca260dc07b1")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="e2eb06fa42f7d18396400ae870604f2e", element="2617c3d7-346b-433c-a120-ee3445831d39")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="e2eb06fa42f7d18396400ae870604f2e", element="5ed76d16-9151-4169-9ba4-96ffc73b8034")&gt;]</msg>
-<status status="PASS" starttime="20230504 10:49:05.635" endtime="20230504 10:49:05.636"/>
+<kw name="Create List" library="BuiltIn">
+<var>@{link_names}</var>
+<doc>Returns a list containing given items.</doc>
+<msg timestamp="20230504 14:34:12.548" level="INFO">@{link_names} = [ ]</msg>
+<status status="PASS" starttime="20230504 14:34:12.547" endtime="20230504 14:34:12.548"/>
 </kw>
 <for flavor="IN">
 <var>${link}</var>
 <value>@{links}</value>
 <iter>
-<var name="${link}">&lt;selenium.webdriver.remote.webelement.WebElement (session="e2eb06fa42f7d18396400ae870604f2e", element="4daa406f-0fe9-4a0a-b11f-7a53043104c3")&gt;</var>
+<var name="${link}">&lt;selenium.webdriver.remote.webelement.WebElement (session="04287a64e9a88e9f073017f11f36014c", element="5af7e155-b0ed-4533-b20b-bb88620e79af")&gt;</var>
 <kw name="Get Text" library="Selenium2Library">
-<var>${text}</var>
+<var>${element}</var>
 <arg>${link}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20230504 10:49:05.656" level="INFO">${text} = Home</msg>
-<status status="PASS" starttime="20230504 10:49:05.638" endtime="20230504 10:49:05.656"/>
+<msg timestamp="20230504 14:34:12.566" level="INFO">${element} = Home</msg>
+<status status="PASS" starttime="20230504 14:34:12.550" endtime="20230504 14:34:12.566"/>
 </kw>
-<kw name="Convert To String" library="BuiltIn">
-<var>${a}</var>
-<arg>${text}</arg>
-<doc>Converts the given item to a Unicode string.</doc>
-<msg timestamp="20230504 10:49:05.657" level="INFO">${a} = Home</msg>
-<status status="PASS" starttime="20230504 10:49:05.657" endtime="20230504 10:49:05.657"/>
+<kw name="Append To List" library="Collections">
+<arg>${link_names}</arg>
+<arg>${element}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230504 14:34:12.566" endtime="20230504 14:34:12.567"/>
 </kw>
-<kw name="Click Link" library="Selenium2Library">
-<arg>${a}</arg>
-<doc>Clicks a link identified by ``locator``.</doc>
-<msg timestamp="20230504 10:49:05.658" level="INFO">Clicking link 'Home'.</msg>
-<status status="PASS" starttime="20230504 10:49:05.657" endtime="20230504 10:49:06.792"/>
-</kw>
-<kw name="Go Back" library="Selenium2Library">
-<doc>Simulates the user clicking the back button on their browser.</doc>
-<status status="PASS" starttime="20230504 10:49:06.792" endtime="20230504 10:49:07.344"/>
-</kw>
-<status status="PASS" starttime="20230504 10:49:05.637" endtime="20230504 10:49:07.344"/>
+<status status="PASS" starttime="20230504 14:34:12.550" endtime="20230504 14:34:12.567"/>
 </iter>
 <iter>
-<var name="${link}">&lt;selenium.webdriver.remote.webelement.WebElement (session="e2eb06fa42f7d18396400ae870604f2e", element="38311bc1-94dd-40bd-a938-1daf5c2ac8be")&gt;</var>
+<var name="${link}">&lt;selenium.webdriver.remote.webelement.WebElement (session="04287a64e9a88e9f073017f11f36014c", element="d69aabd3-13a6-40fa-b6f6-5469b641c5f8")&gt;</var>
 <kw name="Get Text" library="Selenium2Library">
-<var>${text}</var>
+<var>${element}</var>
 <arg>${link}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20230504 10:49:07.458" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20230504 10:49:07.458" level="FAIL">StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
-  (Session info: MicrosoftEdge=112.0.1722.58)
-Stacktrace:
-Backtrace:
-	GetHandleVerifier [0x00007FF6AEFDDF92+60274]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF6AEF6EBF2+818946]
-	(No symbol) [0x00007FF6AEBFDFAE]
-	(No symbol) [0x00007FF6AEC01C5D]
-	(No symbol) [0x00007FF6AEC018D9]
-	(No symbol) [0x00007FF6AEC01D30]
-	(No symbol) [0x00007FF6AEC395C7]
-	(No symbol) [0x00007FF6AEC5F56A]
-	(No symbol) [0x00007FF6AEC32751]
-	(No symbol) [0x00007FF6AEC32621]
-	(No symbol) [0x00007FF6AEC5F8A0]
-	(No symbol) [0x00007FF6AEC32751]
-	(No symbol) [0x00007FF6AEC7891C]
-	(No symbol) [0x00007FF6AEC5F343]
-	(No symbol) [0x00007FF6AEC31796]
-	(No symbol) [0x00007FF6AEC30975]
-	(No symbol) [0x00007FF6AEC31F04]
-	Microsoft::Applications::Events::EventProperties::SetLevel [0x00007FF6AEE727D7+1593703]
-	Microsoft::Applications::Events::EventProperties::SetLevel [0x00007FF6AED1AC5D+185837]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF6AEEAFD47+36951]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF6AEEA7E55+4453]
-	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF6AF1AFDB3+1319011]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF6AEF76CAC+851900]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF6AEF72D14+835620]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF6AEF72E6C+835964]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF6AEF68A41+793937]
-	BaseThreadInitThunk [0x00007FF91EFB7614+20]
-	RtlUserThreadStart [0x00007FF920E826A1+33]
-</msg>
-<status status="FAIL" starttime="20230504 10:49:07.344" endtime="20230504 10:49:07.466"/>
+<msg timestamp="20230504 14:34:12.583" level="INFO">${element} = Flights</msg>
+<status status="PASS" starttime="20230504 14:34:12.567" endtime="20230504 14:34:12.583"/>
 </kw>
-<kw name="Convert To String" library="BuiltIn">
-<var>${a}</var>
-<arg>${text}</arg>
-<doc>Converts the given item to a Unicode string.</doc>
-<status status="NOT RUN" starttime="20230504 10:49:07.467" endtime="20230504 10:49:07.467"/>
+<kw name="Append To List" library="Collections">
+<arg>${link_names}</arg>
+<arg>${element}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230504 14:34:12.583" endtime="20230504 14:34:12.584"/>
 </kw>
+<status status="PASS" starttime="20230504 14:34:12.567" endtime="20230504 14:34:12.584"/>
+</iter>
+<iter>
+<var name="${link}">&lt;selenium.webdriver.remote.webelement.WebElement (session="04287a64e9a88e9f073017f11f36014c", element="0d510931-7b2a-4d66-8753-c0d9edd9e7a2")&gt;</var>
+<kw name="Get Text" library="Selenium2Library">
+<var>${element}</var>
+<arg>${link}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230504 14:34:12.600" level="INFO">${element} = Hotels</msg>
+<status status="PASS" starttime="20230504 14:34:12.584" endtime="20230504 14:34:12.600"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${link_names}</arg>
+<arg>${element}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230504 14:34:12.600" endtime="20230504 14:34:12.601"/>
+</kw>
+<status status="PASS" starttime="20230504 14:34:12.584" endtime="20230504 14:34:12.601"/>
+</iter>
+<iter>
+<var name="${link}">&lt;selenium.webdriver.remote.webelement.WebElement (session="04287a64e9a88e9f073017f11f36014c", element="f0d70086-de19-4845-82eb-941b567ab154")&gt;</var>
+<kw name="Get Text" library="Selenium2Library">
+<var>${element}</var>
+<arg>${link}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230504 14:34:12.644" level="INFO">${element} = Car Rentals</msg>
+<status status="PASS" starttime="20230504 14:34:12.601" endtime="20230504 14:34:12.644"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${link_names}</arg>
+<arg>${element}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230504 14:34:12.645" endtime="20230504 14:34:12.645"/>
+</kw>
+<status status="PASS" starttime="20230504 14:34:12.601" endtime="20230504 14:34:12.645"/>
+</iter>
+<iter>
+<var name="${link}">&lt;selenium.webdriver.remote.webelement.WebElement (session="04287a64e9a88e9f073017f11f36014c", element="3229ad9a-6236-4738-b491-7606408f8bc0")&gt;</var>
+<kw name="Get Text" library="Selenium2Library">
+<var>${element}</var>
+<arg>${link}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230504 14:34:12.659" level="INFO">${element} = Cruises</msg>
+<status status="PASS" starttime="20230504 14:34:12.645" endtime="20230504 14:34:12.659"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${link_names}</arg>
+<arg>${element}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230504 14:34:12.659" endtime="20230504 14:34:12.660"/>
+</kw>
+<status status="PASS" starttime="20230504 14:34:12.645" endtime="20230504 14:34:12.660"/>
+</iter>
+<iter>
+<var name="${link}">&lt;selenium.webdriver.remote.webelement.WebElement (session="04287a64e9a88e9f073017f11f36014c", element="91c8e1cf-2c00-4339-b745-7e733806751b")&gt;</var>
+<kw name="Get Text" library="Selenium2Library">
+<var>${element}</var>
+<arg>${link}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230504 14:34:12.674" level="INFO">${element} = Destinations</msg>
+<status status="PASS" starttime="20230504 14:34:12.660" endtime="20230504 14:34:12.674"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${link_names}</arg>
+<arg>${element}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230504 14:34:12.674" endtime="20230504 14:34:12.674"/>
+</kw>
+<status status="PASS" starttime="20230504 14:34:12.660" endtime="20230504 14:34:12.675"/>
+</iter>
+<iter>
+<var name="${link}">&lt;selenium.webdriver.remote.webelement.WebElement (session="04287a64e9a88e9f073017f11f36014c", element="5d6847ef-9442-4b61-9b8a-2ada58822b85")&gt;</var>
+<kw name="Get Text" library="Selenium2Library">
+<var>${element}</var>
+<arg>${link}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230504 14:34:12.687" level="INFO">${element} = Vacations</msg>
+<status status="PASS" starttime="20230504 14:34:12.675" endtime="20230504 14:34:12.687"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${link_names}</arg>
+<arg>${element}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230504 14:34:12.688" endtime="20230504 14:34:12.688"/>
+</kw>
+<status status="PASS" starttime="20230504 14:34:12.675" endtime="20230504 14:34:12.688"/>
+</iter>
+<iter>
+<var name="${link}">&lt;selenium.webdriver.remote.webelement.WebElement (session="04287a64e9a88e9f073017f11f36014c", element="16d191f9-312b-4a8c-877c-d96e4b781842")&gt;</var>
+<kw name="Get Text" library="Selenium2Library">
+<var>${element}</var>
+<arg>${link}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230504 14:34:12.700" level="INFO">${element} = SIGN-ON</msg>
+<status status="PASS" starttime="20230504 14:34:12.688" endtime="20230504 14:34:12.700"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${link_names}</arg>
+<arg>${element}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230504 14:34:12.700" endtime="20230504 14:34:12.701"/>
+</kw>
+<status status="PASS" starttime="20230504 14:34:12.688" endtime="20230504 14:34:12.701"/>
+</iter>
+<iter>
+<var name="${link}">&lt;selenium.webdriver.remote.webelement.WebElement (session="04287a64e9a88e9f073017f11f36014c", element="ea5576d7-0016-4ba2-8f5d-29409483e062")&gt;</var>
+<kw name="Get Text" library="Selenium2Library">
+<var>${element}</var>
+<arg>${link}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230504 14:34:12.712" level="INFO">${element} = REGISTER</msg>
+<status status="PASS" starttime="20230504 14:34:12.701" endtime="20230504 14:34:12.712"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${link_names}</arg>
+<arg>${element}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230504 14:34:12.712" endtime="20230504 14:34:12.713"/>
+</kw>
+<status status="PASS" starttime="20230504 14:34:12.701" endtime="20230504 14:34:12.713"/>
+</iter>
+<iter>
+<var name="${link}">&lt;selenium.webdriver.remote.webelement.WebElement (session="04287a64e9a88e9f073017f11f36014c", element="ec51f755-3c75-49de-9555-e38f2629e96f")&gt;</var>
+<kw name="Get Text" library="Selenium2Library">
+<var>${element}</var>
+<arg>${link}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230504 14:34:12.737" level="INFO">${element} = SUPPORT</msg>
+<status status="PASS" starttime="20230504 14:34:12.713" endtime="20230504 14:34:12.737"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${link_names}</arg>
+<arg>${element}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230504 14:34:12.737" endtime="20230504 14:34:12.737"/>
+</kw>
+<status status="PASS" starttime="20230504 14:34:12.713" endtime="20230504 14:34:12.737"/>
+</iter>
+<iter>
+<var name="${link}">&lt;selenium.webdriver.remote.webelement.WebElement (session="04287a64e9a88e9f073017f11f36014c", element="d4c7759c-ea85-4048-b871-dc09a56d26ff")&gt;</var>
+<kw name="Get Text" library="Selenium2Library">
+<var>${element}</var>
+<arg>${link}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230504 14:34:12.749" level="INFO">${element} = CONTACT</msg>
+<status status="PASS" starttime="20230504 14:34:12.738" endtime="20230504 14:34:12.749"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${link_names}</arg>
+<arg>${element}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230504 14:34:12.749" endtime="20230504 14:34:12.750"/>
+</kw>
+<status status="PASS" starttime="20230504 14:34:12.738" endtime="20230504 14:34:12.750"/>
+</iter>
+<iter>
+<var name="${link}">&lt;selenium.webdriver.remote.webelement.WebElement (session="04287a64e9a88e9f073017f11f36014c", element="ca161b7f-a22b-40b0-9bae-5e17a660b513")&gt;</var>
+<kw name="Get Text" library="Selenium2Library">
+<var>${element}</var>
+<arg>${link}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230504 14:34:12.760" level="INFO">${element} = your destination</msg>
+<status status="PASS" starttime="20230504 14:34:12.750" endtime="20230504 14:34:12.761"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${link_names}</arg>
+<arg>${element}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230504 14:34:12.761" endtime="20230504 14:34:12.761"/>
+</kw>
+<status status="PASS" starttime="20230504 14:34:12.750" endtime="20230504 14:34:12.761"/>
+</iter>
+<iter>
+<var name="${link}">&lt;selenium.webdriver.remote.webelement.WebElement (session="04287a64e9a88e9f073017f11f36014c", element="e89a7630-4b1c-4750-8e7f-44fb5db307d6")&gt;</var>
+<kw name="Get Text" library="Selenium2Library">
+<var>${element}</var>
+<arg>${link}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230504 14:34:12.776" level="INFO">${element} = featured vacation destinations</msg>
+<status status="PASS" starttime="20230504 14:34:12.762" endtime="20230504 14:34:12.776"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${link_names}</arg>
+<arg>${element}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230504 14:34:12.776" endtime="20230504 14:34:12.776"/>
+</kw>
+<status status="PASS" starttime="20230504 14:34:12.761" endtime="20230504 14:34:12.777"/>
+</iter>
+<iter>
+<var name="${link}">&lt;selenium.webdriver.remote.webelement.WebElement (session="04287a64e9a88e9f073017f11f36014c", element="d49a4844-9869-4d3b-b462-193d33c6de4f")&gt;</var>
+<kw name="Get Text" library="Selenium2Library">
+<var>${element}</var>
+<arg>${link}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230504 14:34:12.791" level="INFO">${element} = Register here</msg>
+<status status="PASS" starttime="20230504 14:34:12.777" endtime="20230504 14:34:12.791"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${link_names}</arg>
+<arg>${element}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230504 14:34:12.791" endtime="20230504 14:34:12.792"/>
+</kw>
+<status status="PASS" starttime="20230504 14:34:12.777" endtime="20230504 14:34:12.792"/>
+</iter>
+<iter>
+<var name="${link}">&lt;selenium.webdriver.remote.webelement.WebElement (session="04287a64e9a88e9f073017f11f36014c", element="6ec06fc5-b7c4-43ad-a42a-071926854e77")&gt;</var>
+<kw name="Get Text" library="Selenium2Library">
+<var>${element}</var>
+<arg>${link}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230504 14:34:12.810" level="INFO">${element} = Business Travel @ About.com</msg>
+<status status="PASS" starttime="20230504 14:34:12.792" endtime="20230504 14:34:12.810"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${link_names}</arg>
+<arg>${element}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230504 14:34:12.811" endtime="20230504 14:34:12.811"/>
+</kw>
+<status status="PASS" starttime="20230504 14:34:12.792" endtime="20230504 14:34:12.811"/>
+</iter>
+<iter>
+<var name="${link}">&lt;selenium.webdriver.remote.webelement.WebElement (session="04287a64e9a88e9f073017f11f36014c", element="140f4340-b467-47ab-b96a-1a97d92afc64")&gt;</var>
+<kw name="Get Text" library="Selenium2Library">
+<var>${element}</var>
+<arg>${link}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230504 14:34:12.825" level="INFO">${element} = Salon Travel</msg>
+<status status="PASS" starttime="20230504 14:34:12.811" endtime="20230504 14:34:12.825"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${link_names}</arg>
+<arg>${element}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230504 14:34:12.825" endtime="20230504 14:34:12.826"/>
+</kw>
+<status status="PASS" starttime="20230504 14:34:12.811" endtime="20230504 14:34:12.826"/>
+</iter>
+<status status="PASS" starttime="20230504 14:34:12.549" endtime="20230504 14:34:12.826"/>
+</for>
+<for flavor="IN">
+<var>${element}</var>
+<value>@{link_names}</value>
+<iter>
+<var name="${element}">Home</var>
 <kw name="Click Link" library="Selenium2Library">
-<arg>${a}</arg>
+<arg>${element}</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20230504 10:49:07.467" endtime="20230504 10:49:07.467"/>
+<msg timestamp="20230504 14:34:12.828" level="INFO">Clicking link 'Home'.</msg>
+<status status="PASS" starttime="20230504 14:34:12.827" endtime="20230504 14:34:14.011"/>
 </kw>
+<kw name="Get Title" library="Selenium2Library">
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20230504 14:34:14.063" level="INFO">${title} = Welcome: Mercury Tours</msg>
+<status status="PASS" starttime="20230504 14:34:14.011" endtime="20230504 14:34:14.063"/>
+</kw>
+<try>
+<branch type="TRY">
+<kw name="Page Should Not Contain" library="Selenium2Library">
+<arg>Under Construction: Mercury Tours</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<msg timestamp="20230504 14:34:14.143" level="INFO">Current page does not contain text 'Under Construction: Mercury Tours'.</msg>
+<status status="PASS" starttime="20230504 14:34:14.064" endtime="20230504 14:34:14.143"/>
+</kw>
+<kw name="Catenate" library="BuiltIn">
+<var>${log}</var>
+<arg>${element}</arg>
+<arg>Link is working.</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<msg timestamp="20230504 14:34:14.144" level="INFO">${log} = Home Link is working.</msg>
+<status status="PASS" starttime="20230504 14:34:14.143" endtime="20230504 14:34:14.144"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${log}.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230504 14:34:14.144" endtime="20230504 14:34:14.164"/>
+</kw>
+<status status="PASS" starttime="20230504 14:34:14.063" endtime="20230504 14:34:14.164"/>
+</branch>
+<branch type="EXCEPT">
+<kw name="Catenate" library="BuiltIn">
+<var>${log}</var>
+<arg>${element}</arg>
+<arg>Link is under construction.</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="NOT RUN" starttime="20230504 14:34:14.165" endtime="20230504 14:34:14.165"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${log}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230504 14:34:14.165" endtime="20230504 14:34:14.165"/>
+</kw>
+<status status="NOT RUN" starttime="20230504 14:34:14.164" endtime="20230504 14:34:14.165"/>
+</branch>
+<status status="PASS" starttime="20230504 14:34:14.063" endtime="20230504 14:34:14.165"/>
+</try>
 <kw name="Go Back" library="Selenium2Library">
 <doc>Simulates the user clicking the back button on their browser.</doc>
-<status status="NOT RUN" starttime="20230504 10:49:07.467" endtime="20230504 10:49:07.468"/>
+<status status="PASS" starttime="20230504 14:34:14.165" endtime="20230504 14:34:14.720"/>
 </kw>
-<status status="FAIL" starttime="20230504 10:49:07.344" endtime="20230504 10:49:07.468"/>
+<status status="PASS" starttime="20230504 14:34:12.827" endtime="20230504 14:34:14.721"/>
 </iter>
-<status status="FAIL" starttime="20230504 10:49:05.637" endtime="20230504 10:49:07.468"/>
+<iter>
+<var name="${element}">Flights</var>
+<kw name="Click Link" library="Selenium2Library">
+<arg>${element}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230504 14:34:14.721" level="INFO">Clicking link 'Flights'.</msg>
+<status status="PASS" starttime="20230504 14:34:14.721" endtime="20230504 14:34:15.477"/>
+</kw>
+<kw name="Get Title" library="Selenium2Library">
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20230504 14:34:15.483" level="INFO">${title} = Find a Flight: Mercury Tours:</msg>
+<status status="PASS" starttime="20230504 14:34:15.478" endtime="20230504 14:34:15.483"/>
+</kw>
+<try>
+<branch type="TRY">
+<kw name="Page Should Not Contain" library="Selenium2Library">
+<arg>Under Construction: Mercury Tours</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<msg timestamp="20230504 14:34:15.555" level="INFO">Current page does not contain text 'Under Construction: Mercury Tours'.</msg>
+<status status="PASS" starttime="20230504 14:34:15.483" endtime="20230504 14:34:15.555"/>
+</kw>
+<kw name="Catenate" library="BuiltIn">
+<var>${log}</var>
+<arg>${element}</arg>
+<arg>Link is working.</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<msg timestamp="20230504 14:34:15.555" level="INFO">${log} = Flights Link is working.</msg>
+<status status="PASS" starttime="20230504 14:34:15.555" endtime="20230504 14:34:15.555"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${log}.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230504 14:34:15.556" endtime="20230504 14:34:15.556"/>
+</kw>
+<status status="PASS" starttime="20230504 14:34:15.483" endtime="20230504 14:34:15.556"/>
+</branch>
+<branch type="EXCEPT">
+<kw name="Catenate" library="BuiltIn">
+<var>${log}</var>
+<arg>${element}</arg>
+<arg>Link is under construction.</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="NOT RUN" starttime="20230504 14:34:15.557" endtime="20230504 14:34:15.557"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${log}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230504 14:34:15.557" endtime="20230504 14:34:15.557"/>
+</kw>
+<status status="NOT RUN" starttime="20230504 14:34:15.556" endtime="20230504 14:34:15.557"/>
+</branch>
+<status status="PASS" starttime="20230504 14:34:15.483" endtime="20230504 14:34:15.557"/>
+</try>
+<kw name="Go Back" library="Selenium2Library">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230504 14:34:15.558" endtime="20230504 14:34:16.214"/>
+</kw>
+<status status="PASS" starttime="20230504 14:34:14.721" endtime="20230504 14:34:16.214"/>
+</iter>
+<iter>
+<var name="${element}">Hotels</var>
+<kw name="Click Link" library="Selenium2Library">
+<arg>${element}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230504 14:34:16.215" level="INFO">Clicking link 'Hotels'.</msg>
+<status status="PASS" starttime="20230504 14:34:16.214" endtime="20230504 14:34:17.046"/>
+</kw>
+<kw name="Get Title" library="Selenium2Library">
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20230504 14:34:17.054" level="INFO">${title} = Under Construction: Mercury Tours</msg>
+<status status="PASS" starttime="20230504 14:34:17.047" endtime="20230504 14:34:17.054"/>
+</kw>
+<try>
+<branch type="TRY">
+<kw name="Page Should Not Contain" library="Selenium2Library">
+<arg>Under Construction: Mercury Tours</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<msg timestamp="20230504 14:34:17.149" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230504 14:34:17.149" level="FAIL">Page should not have contained text 'Under Construction: Mercury Tours'.</msg>
+<status status="FAIL" starttime="20230504 14:34:17.055" endtime="20230504 14:34:17.153"/>
+</kw>
+<kw name="Catenate" library="BuiltIn">
+<var>${log}</var>
+<arg>${element}</arg>
+<arg>Link is working.</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="NOT RUN" starttime="20230504 14:34:17.153" endtime="20230504 14:34:17.153"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${log}.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230504 14:34:17.154" endtime="20230504 14:34:17.154"/>
+</kw>
+<status status="FAIL" starttime="20230504 14:34:17.054" endtime="20230504 14:34:17.154"/>
+</branch>
+<branch type="EXCEPT">
+<kw name="Catenate" library="BuiltIn">
+<var>${log}</var>
+<arg>${element}</arg>
+<arg>Link is under construction.</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<msg timestamp="20230504 14:34:17.154" level="INFO">${log} = Hotels Link is under construction.</msg>
+<status status="PASS" starttime="20230504 14:34:17.154" endtime="20230504 14:34:17.154"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${log}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230504 14:34:17.155" endtime="20230504 14:34:17.155"/>
+</kw>
+<status status="PASS" starttime="20230504 14:34:17.154" endtime="20230504 14:34:17.155"/>
+</branch>
+<status status="PASS" starttime="20230504 14:34:17.054" endtime="20230504 14:34:17.156"/>
+</try>
+<kw name="Go Back" library="Selenium2Library">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230504 14:34:17.156" endtime="20230504 14:34:17.759"/>
+</kw>
+<status status="PASS" starttime="20230504 14:34:16.214" endtime="20230504 14:34:17.759"/>
+</iter>
+<iter>
+<var name="${element}">Car Rentals</var>
+<kw name="Click Link" library="Selenium2Library">
+<arg>${element}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230504 14:34:17.761" level="INFO">Clicking link 'Car Rentals'.</msg>
+<status status="PASS" starttime="20230504 14:34:17.760" endtime="20230504 14:34:18.111"/>
+</kw>
+<kw name="Get Title" library="Selenium2Library">
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20230504 14:34:18.117" level="INFO">${title} = Under Construction: Mercury Tours</msg>
+<status status="PASS" starttime="20230504 14:34:18.111" endtime="20230504 14:34:18.117"/>
+</kw>
+<try>
+<branch type="TRY">
+<kw name="Page Should Not Contain" library="Selenium2Library">
+<arg>Under Construction: Mercury Tours</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<msg timestamp="20230504 14:34:18.222" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230504 14:34:18.222" level="FAIL">Page should not have contained text 'Under Construction: Mercury Tours'.</msg>
+<status status="FAIL" starttime="20230504 14:34:18.118" endtime="20230504 14:34:18.223"/>
+</kw>
+<kw name="Catenate" library="BuiltIn">
+<var>${log}</var>
+<arg>${element}</arg>
+<arg>Link is working.</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="NOT RUN" starttime="20230504 14:34:18.223" endtime="20230504 14:34:18.223"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${log}.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230504 14:34:18.223" endtime="20230504 14:34:18.224"/>
+</kw>
+<status status="FAIL" starttime="20230504 14:34:18.117" endtime="20230504 14:34:18.224"/>
+</branch>
+<branch type="EXCEPT">
+<kw name="Catenate" library="BuiltIn">
+<var>${log}</var>
+<arg>${element}</arg>
+<arg>Link is under construction.</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<msg timestamp="20230504 14:34:18.224" level="INFO">${log} = Car Rentals Link is under construction.</msg>
+<status status="PASS" starttime="20230504 14:34:18.224" endtime="20230504 14:34:18.225"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${log}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230504 14:34:18.225" endtime="20230504 14:34:18.225"/>
+</kw>
+<status status="PASS" starttime="20230504 14:34:18.224" endtime="20230504 14:34:18.226"/>
+</branch>
+<status status="PASS" starttime="20230504 14:34:18.117" endtime="20230504 14:34:18.226"/>
+</try>
+<kw name="Go Back" library="Selenium2Library">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230504 14:34:18.226" endtime="20230504 14:34:18.811"/>
+</kw>
+<status status="PASS" starttime="20230504 14:34:17.759" endtime="20230504 14:34:18.811"/>
+</iter>
+<iter>
+<var name="${element}">Cruises</var>
+<kw name="Click Link" library="Selenium2Library">
+<arg>${element}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230504 14:34:18.812" level="INFO">Clicking link 'Cruises'.</msg>
+<status status="PASS" starttime="20230504 14:34:18.812" endtime="20230504 14:34:19.515"/>
+</kw>
+<kw name="Get Title" library="Selenium2Library">
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20230504 14:34:19.519" level="INFO">${title} = Welcome: Mercury Tours</msg>
+<status status="PASS" starttime="20230504 14:34:19.515" endtime="20230504 14:34:19.519"/>
+</kw>
+<try>
+<branch type="TRY">
+<kw name="Page Should Not Contain" library="Selenium2Library">
+<arg>Under Construction: Mercury Tours</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<msg timestamp="20230504 14:34:19.595" level="INFO">Current page does not contain text 'Under Construction: Mercury Tours'.</msg>
+<status status="PASS" starttime="20230504 14:34:19.520" endtime="20230504 14:34:19.595"/>
+</kw>
+<kw name="Catenate" library="BuiltIn">
+<var>${log}</var>
+<arg>${element}</arg>
+<arg>Link is working.</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<msg timestamp="20230504 14:34:19.595" level="INFO">${log} = Cruises Link is working.</msg>
+<status status="PASS" starttime="20230504 14:34:19.595" endtime="20230504 14:34:19.596"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${log}.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230504 14:34:19.596" endtime="20230504 14:34:19.596"/>
+</kw>
+<status status="PASS" starttime="20230504 14:34:19.519" endtime="20230504 14:34:19.596"/>
+</branch>
+<branch type="EXCEPT">
+<kw name="Catenate" library="BuiltIn">
+<var>${log}</var>
+<arg>${element}</arg>
+<arg>Link is under construction.</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="NOT RUN" starttime="20230504 14:34:19.597" endtime="20230504 14:34:19.597"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${log}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230504 14:34:19.597" endtime="20230504 14:34:19.597"/>
+</kw>
+<status status="NOT RUN" starttime="20230504 14:34:19.597" endtime="20230504 14:34:19.597"/>
+</branch>
+<status status="PASS" starttime="20230504 14:34:19.519" endtime="20230504 14:34:19.598"/>
+</try>
+<kw name="Go Back" library="Selenium2Library">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230504 14:34:19.598" endtime="20230504 14:34:20.181"/>
+</kw>
+<status status="PASS" starttime="20230504 14:34:18.812" endtime="20230504 14:34:20.181"/>
+</iter>
+<iter>
+<var name="${element}">Destinations</var>
+<kw name="Click Link" library="Selenium2Library">
+<arg>${element}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230504 14:34:20.182" level="INFO">Clicking link 'Destinations'.</msg>
+<status status="PASS" starttime="20230504 14:34:20.182" endtime="20230504 14:34:20.555"/>
+</kw>
+<kw name="Get Title" library="Selenium2Library">
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20230504 14:34:20.562" level="INFO">${title} = Under Construction: Mercury Tours</msg>
+<status status="PASS" starttime="20230504 14:34:20.556" endtime="20230504 14:34:20.562"/>
+</kw>
+<try>
+<branch type="TRY">
+<kw name="Page Should Not Contain" library="Selenium2Library">
+<arg>Under Construction: Mercury Tours</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<msg timestamp="20230504 14:34:20.675" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230504 14:34:20.675" level="FAIL">Page should not have contained text 'Under Construction: Mercury Tours'.</msg>
+<status status="FAIL" starttime="20230504 14:34:20.563" endtime="20230504 14:34:20.676"/>
+</kw>
+<kw name="Catenate" library="BuiltIn">
+<var>${log}</var>
+<arg>${element}</arg>
+<arg>Link is working.</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="NOT RUN" starttime="20230504 14:34:20.676" endtime="20230504 14:34:20.676"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${log}.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230504 14:34:20.677" endtime="20230504 14:34:20.677"/>
+</kw>
+<status status="FAIL" starttime="20230504 14:34:20.563" endtime="20230504 14:34:20.677"/>
+</branch>
+<branch type="EXCEPT">
+<kw name="Catenate" library="BuiltIn">
+<var>${log}</var>
+<arg>${element}</arg>
+<arg>Link is under construction.</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<msg timestamp="20230504 14:34:20.678" level="INFO">${log} = Destinations Link is under construction.</msg>
+<status status="PASS" starttime="20230504 14:34:20.678" endtime="20230504 14:34:20.678"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${log}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230504 14:34:20.679" endtime="20230504 14:34:20.680"/>
+</kw>
+<status status="PASS" starttime="20230504 14:34:20.678" endtime="20230504 14:34:20.680"/>
+</branch>
+<status status="PASS" starttime="20230504 14:34:20.563" endtime="20230504 14:34:20.680"/>
+</try>
+<kw name="Go Back" library="Selenium2Library">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230504 14:34:20.680" endtime="20230504 14:34:21.224"/>
+</kw>
+<status status="PASS" starttime="20230504 14:34:20.181" endtime="20230504 14:34:21.224"/>
+</iter>
+<iter>
+<var name="${element}">Vacations</var>
+<kw name="Click Link" library="Selenium2Library">
+<arg>${element}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230504 14:34:21.225" level="INFO">Clicking link 'Vacations'.</msg>
+<status status="PASS" starttime="20230504 14:34:21.224" endtime="20230504 14:34:21.584"/>
+</kw>
+<kw name="Get Title" library="Selenium2Library">
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20230504 14:34:21.591" level="INFO">${title} = Under Construction: Mercury Tours</msg>
+<status status="PASS" starttime="20230504 14:34:21.584" endtime="20230504 14:34:21.591"/>
+</kw>
+<try>
+<branch type="TRY">
+<kw name="Page Should Not Contain" library="Selenium2Library">
+<arg>Under Construction: Mercury Tours</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<msg timestamp="20230504 14:34:21.719" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230504 14:34:21.719" level="FAIL">Page should not have contained text 'Under Construction: Mercury Tours'.</msg>
+<status status="FAIL" starttime="20230504 14:34:21.592" endtime="20230504 14:34:21.720"/>
+</kw>
+<kw name="Catenate" library="BuiltIn">
+<var>${log}</var>
+<arg>${element}</arg>
+<arg>Link is working.</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="NOT RUN" starttime="20230504 14:34:21.720" endtime="20230504 14:34:21.720"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${log}.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230504 14:34:21.720" endtime="20230504 14:34:21.721"/>
+</kw>
+<status status="FAIL" starttime="20230504 14:34:21.591" endtime="20230504 14:34:21.721"/>
+</branch>
+<branch type="EXCEPT">
+<kw name="Catenate" library="BuiltIn">
+<var>${log}</var>
+<arg>${element}</arg>
+<arg>Link is under construction.</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<msg timestamp="20230504 14:34:21.721" level="INFO">${log} = Vacations Link is under construction.</msg>
+<status status="PASS" starttime="20230504 14:34:21.721" endtime="20230504 14:34:21.721"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${log}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230504 14:34:21.722" endtime="20230504 14:34:21.722"/>
+</kw>
+<status status="PASS" starttime="20230504 14:34:21.721" endtime="20230504 14:34:21.723"/>
+</branch>
+<status status="PASS" starttime="20230504 14:34:21.591" endtime="20230504 14:34:21.723"/>
+</try>
+<kw name="Go Back" library="Selenium2Library">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230504 14:34:21.723" endtime="20230504 14:34:22.372"/>
+</kw>
+<status status="PASS" starttime="20230504 14:34:21.224" endtime="20230504 14:34:22.372"/>
+</iter>
+<iter>
+<var name="${element}">SIGN-ON</var>
+<kw name="Click Link" library="Selenium2Library">
+<arg>${element}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230504 14:34:22.373" level="INFO">Clicking link 'SIGN-ON'.</msg>
+<status status="PASS" starttime="20230504 14:34:22.372" endtime="20230504 14:34:23.011"/>
+</kw>
+<kw name="Get Title" library="Selenium2Library">
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20230504 14:34:23.016" level="INFO">${title} = Sign-on: Mercury Tours</msg>
+<status status="PASS" starttime="20230504 14:34:23.011" endtime="20230504 14:34:23.016"/>
+</kw>
+<try>
+<branch type="TRY">
+<kw name="Page Should Not Contain" library="Selenium2Library">
+<arg>Under Construction: Mercury Tours</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<msg timestamp="20230504 14:34:23.085" level="INFO">Current page does not contain text 'Under Construction: Mercury Tours'.</msg>
+<status status="PASS" starttime="20230504 14:34:23.017" endtime="20230504 14:34:23.085"/>
+</kw>
+<kw name="Catenate" library="BuiltIn">
+<var>${log}</var>
+<arg>${element}</arg>
+<arg>Link is working.</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<msg timestamp="20230504 14:34:23.086" level="INFO">${log} = SIGN-ON Link is working.</msg>
+<status status="PASS" starttime="20230504 14:34:23.085" endtime="20230504 14:34:23.086"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${log}.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230504 14:34:23.086" endtime="20230504 14:34:23.087"/>
+</kw>
+<status status="PASS" starttime="20230504 14:34:23.016" endtime="20230504 14:34:23.087"/>
+</branch>
+<branch type="EXCEPT">
+<kw name="Catenate" library="BuiltIn">
+<var>${log}</var>
+<arg>${element}</arg>
+<arg>Link is under construction.</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="NOT RUN" starttime="20230504 14:34:23.088" endtime="20230504 14:34:23.088"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${log}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230504 14:34:23.088" endtime="20230504 14:34:23.088"/>
+</kw>
+<status status="NOT RUN" starttime="20230504 14:34:23.087" endtime="20230504 14:34:23.088"/>
+</branch>
+<status status="PASS" starttime="20230504 14:34:23.016" endtime="20230504 14:34:23.088"/>
+</try>
+<kw name="Go Back" library="Selenium2Library">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230504 14:34:23.089" endtime="20230504 14:34:23.735"/>
+</kw>
+<status status="PASS" starttime="20230504 14:34:22.372" endtime="20230504 14:34:23.736"/>
+</iter>
+<iter>
+<var name="${element}">REGISTER</var>
+<kw name="Click Link" library="Selenium2Library">
+<arg>${element}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230504 14:34:23.737" level="INFO">Clicking link 'REGISTER'.</msg>
+<status status="PASS" starttime="20230504 14:34:23.736" endtime="20230504 14:34:24.418"/>
+</kw>
+<kw name="Get Title" library="Selenium2Library">
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20230504 14:34:24.423" level="INFO">${title} = Register: Mercury Tours</msg>
+<status status="PASS" starttime="20230504 14:34:24.418" endtime="20230504 14:34:24.424"/>
+</kw>
+<try>
+<branch type="TRY">
+<kw name="Page Should Not Contain" library="Selenium2Library">
+<arg>Under Construction: Mercury Tours</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<msg timestamp="20230504 14:34:24.503" level="INFO">Current page does not contain text 'Under Construction: Mercury Tours'.</msg>
+<status status="PASS" starttime="20230504 14:34:24.425" endtime="20230504 14:34:24.503"/>
+</kw>
+<kw name="Catenate" library="BuiltIn">
+<var>${log}</var>
+<arg>${element}</arg>
+<arg>Link is working.</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<msg timestamp="20230504 14:34:24.504" level="INFO">${log} = REGISTER Link is working.</msg>
+<status status="PASS" starttime="20230504 14:34:24.503" endtime="20230504 14:34:24.504"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${log}.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230504 14:34:24.504" endtime="20230504 14:34:24.505"/>
+</kw>
+<status status="PASS" starttime="20230504 14:34:24.424" endtime="20230504 14:34:24.505"/>
+</branch>
+<branch type="EXCEPT">
+<kw name="Catenate" library="BuiltIn">
+<var>${log}</var>
+<arg>${element}</arg>
+<arg>Link is under construction.</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="NOT RUN" starttime="20230504 14:34:24.505" endtime="20230504 14:34:24.505"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${log}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230504 14:34:24.505" endtime="20230504 14:34:24.506"/>
+</kw>
+<status status="NOT RUN" starttime="20230504 14:34:24.505" endtime="20230504 14:34:24.506"/>
+</branch>
+<status status="PASS" starttime="20230504 14:34:24.424" endtime="20230504 14:34:24.506"/>
+</try>
+<kw name="Go Back" library="Selenium2Library">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230504 14:34:24.506" endtime="20230504 14:34:25.063"/>
+</kw>
+<status status="PASS" starttime="20230504 14:34:23.736" endtime="20230504 14:34:25.063"/>
+</iter>
+<iter>
+<var name="${element}">SUPPORT</var>
+<kw name="Click Link" library="Selenium2Library">
+<arg>${element}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230504 14:34:25.064" level="INFO">Clicking link 'SUPPORT'.</msg>
+<status status="PASS" starttime="20230504 14:34:25.064" endtime="20230504 14:34:25.424"/>
+</kw>
+<kw name="Get Title" library="Selenium2Library">
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20230504 14:34:25.431" level="INFO">${title} = Under Construction: Mercury Tours</msg>
+<status status="PASS" starttime="20230504 14:34:25.424" endtime="20230504 14:34:25.431"/>
+</kw>
+<try>
+<branch type="TRY">
+<kw name="Page Should Not Contain" library="Selenium2Library">
+<arg>Under Construction: Mercury Tours</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<msg timestamp="20230504 14:34:25.526" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230504 14:34:25.526" level="FAIL">Page should not have contained text 'Under Construction: Mercury Tours'.</msg>
+<status status="FAIL" starttime="20230504 14:34:25.431" endtime="20230504 14:34:25.527"/>
+</kw>
+<kw name="Catenate" library="BuiltIn">
+<var>${log}</var>
+<arg>${element}</arg>
+<arg>Link is working.</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="NOT RUN" starttime="20230504 14:34:25.527" endtime="20230504 14:34:25.527"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${log}.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230504 14:34:25.528" endtime="20230504 14:34:25.528"/>
+</kw>
+<status status="FAIL" starttime="20230504 14:34:25.431" endtime="20230504 14:34:25.528"/>
+</branch>
+<branch type="EXCEPT">
+<kw name="Catenate" library="BuiltIn">
+<var>${log}</var>
+<arg>${element}</arg>
+<arg>Link is under construction.</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<msg timestamp="20230504 14:34:25.529" level="INFO">${log} = SUPPORT Link is under construction.</msg>
+<status status="PASS" starttime="20230504 14:34:25.528" endtime="20230504 14:34:25.529"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${log}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230504 14:34:25.529" endtime="20230504 14:34:25.530"/>
+</kw>
+<status status="PASS" starttime="20230504 14:34:25.528" endtime="20230504 14:34:25.530"/>
+</branch>
+<status status="PASS" starttime="20230504 14:34:25.431" endtime="20230504 14:34:25.530"/>
+</try>
+<kw name="Go Back" library="Selenium2Library">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230504 14:34:25.530" endtime="20230504 14:34:26.060"/>
+</kw>
+<status status="PASS" starttime="20230504 14:34:25.063" endtime="20230504 14:34:26.060"/>
+</iter>
+<iter>
+<var name="${element}">CONTACT</var>
+<kw name="Click Link" library="Selenium2Library">
+<arg>${element}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230504 14:34:26.061" level="INFO">Clicking link 'CONTACT'.</msg>
+<status status="PASS" starttime="20230504 14:34:26.060" endtime="20230504 14:34:26.420"/>
+</kw>
+<kw name="Get Title" library="Selenium2Library">
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20230504 14:34:26.424" level="INFO">${title} = Under Construction: Mercury Tours</msg>
+<status status="PASS" starttime="20230504 14:34:26.420" endtime="20230504 14:34:26.424"/>
+</kw>
+<try>
+<branch type="TRY">
+<kw name="Page Should Not Contain" library="Selenium2Library">
+<arg>Under Construction: Mercury Tours</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<msg timestamp="20230504 14:34:26.549" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230504 14:34:26.549" level="FAIL">Page should not have contained text 'Under Construction: Mercury Tours'.</msg>
+<status status="FAIL" starttime="20230504 14:34:26.426" endtime="20230504 14:34:26.550"/>
+</kw>
+<kw name="Catenate" library="BuiltIn">
+<var>${log}</var>
+<arg>${element}</arg>
+<arg>Link is working.</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="NOT RUN" starttime="20230504 14:34:26.550" endtime="20230504 14:34:26.550"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${log}.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230504 14:34:26.550" endtime="20230504 14:34:26.550"/>
+</kw>
+<status status="FAIL" starttime="20230504 14:34:26.424" endtime="20230504 14:34:26.551"/>
+</branch>
+<branch type="EXCEPT">
+<kw name="Catenate" library="BuiltIn">
+<var>${log}</var>
+<arg>${element}</arg>
+<arg>Link is under construction.</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<msg timestamp="20230504 14:34:26.551" level="INFO">${log} = CONTACT Link is under construction.</msg>
+<status status="PASS" starttime="20230504 14:34:26.551" endtime="20230504 14:34:26.551"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${log}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230504 14:34:26.551" endtime="20230504 14:34:26.552"/>
+</kw>
+<status status="PASS" starttime="20230504 14:34:26.551" endtime="20230504 14:34:26.552"/>
+</branch>
+<status status="PASS" starttime="20230504 14:34:26.424" endtime="20230504 14:34:26.552"/>
+</try>
+<kw name="Go Back" library="Selenium2Library">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230504 14:34:26.553" endtime="20230504 14:34:27.145"/>
+</kw>
+<status status="PASS" starttime="20230504 14:34:26.060" endtime="20230504 14:34:27.145"/>
+</iter>
+<iter>
+<var name="${element}">your destination</var>
+<kw name="Click Link" library="Selenium2Library">
+<arg>${element}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230504 14:34:27.146" level="INFO">Clicking link 'your destination'.</msg>
+<status status="PASS" starttime="20230504 14:34:27.145" endtime="20230504 14:34:27.852"/>
+</kw>
+<kw name="Get Title" library="Selenium2Library">
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20230504 14:34:27.861" level="INFO">${title} = Welcome: Mercury Tours</msg>
+<status status="PASS" starttime="20230504 14:34:27.852" endtime="20230504 14:34:27.861"/>
+</kw>
+<try>
+<branch type="TRY">
+<kw name="Page Should Not Contain" library="Selenium2Library">
+<arg>Under Construction: Mercury Tours</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<msg timestamp="20230504 14:34:27.932" level="INFO">Current page does not contain text 'Under Construction: Mercury Tours'.</msg>
+<status status="PASS" starttime="20230504 14:34:27.861" endtime="20230504 14:34:27.932"/>
+</kw>
+<kw name="Catenate" library="BuiltIn">
+<var>${log}</var>
+<arg>${element}</arg>
+<arg>Link is working.</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<msg timestamp="20230504 14:34:27.932" level="INFO">${log} = your destination Link is working.</msg>
+<status status="PASS" starttime="20230504 14:34:27.932" endtime="20230504 14:34:27.933"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${log}.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230504 14:34:27.933" endtime="20230504 14:34:27.933"/>
+</kw>
+<status status="PASS" starttime="20230504 14:34:27.861" endtime="20230504 14:34:27.933"/>
+</branch>
+<branch type="EXCEPT">
+<kw name="Catenate" library="BuiltIn">
+<var>${log}</var>
+<arg>${element}</arg>
+<arg>Link is under construction.</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="NOT RUN" starttime="20230504 14:34:27.934" endtime="20230504 14:34:27.934"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${log}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230504 14:34:27.934" endtime="20230504 14:34:27.934"/>
+</kw>
+<status status="NOT RUN" starttime="20230504 14:34:27.934" endtime="20230504 14:34:27.934"/>
+</branch>
+<status status="PASS" starttime="20230504 14:34:27.861" endtime="20230504 14:34:27.935"/>
+</try>
+<kw name="Go Back" library="Selenium2Library">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230504 14:34:27.935" endtime="20230504 14:34:28.562"/>
+</kw>
+<status status="PASS" starttime="20230504 14:34:27.145" endtime="20230504 14:34:28.563"/>
+</iter>
+<iter>
+<var name="${element}">featured vacation destinations</var>
+<kw name="Click Link" library="Selenium2Library">
+<arg>${element}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230504 14:34:28.563" level="INFO">Clicking link 'featured vacation destinations'.</msg>
+<status status="PASS" starttime="20230504 14:34:28.563" endtime="20230504 14:34:30.056"/>
+</kw>
+<kw name="Get Title" library="Selenium2Library">
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20230504 14:34:30.063" level="INFO">${title} = Welcome: Mercury Tours</msg>
+<status status="PASS" starttime="20230504 14:34:30.056" endtime="20230504 14:34:30.063"/>
+</kw>
+<try>
+<branch type="TRY">
+<kw name="Page Should Not Contain" library="Selenium2Library">
+<arg>Under Construction: Mercury Tours</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<msg timestamp="20230504 14:34:30.132" level="INFO">Current page does not contain text 'Under Construction: Mercury Tours'.</msg>
+<status status="PASS" starttime="20230504 14:34:30.063" endtime="20230504 14:34:30.133"/>
+</kw>
+<kw name="Catenate" library="BuiltIn">
+<var>${log}</var>
+<arg>${element}</arg>
+<arg>Link is working.</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<msg timestamp="20230504 14:34:30.133" level="INFO">${log} = featured vacation destinations Link is working.</msg>
+<status status="PASS" starttime="20230504 14:34:30.133" endtime="20230504 14:34:30.133"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${log}.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230504 14:34:30.133" endtime="20230504 14:34:30.134"/>
+</kw>
+<status status="PASS" starttime="20230504 14:34:30.063" endtime="20230504 14:34:30.134"/>
+</branch>
+<branch type="EXCEPT">
+<kw name="Catenate" library="BuiltIn">
+<var>${log}</var>
+<arg>${element}</arg>
+<arg>Link is under construction.</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="NOT RUN" starttime="20230504 14:34:30.134" endtime="20230504 14:34:30.135"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${log}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230504 14:34:30.135" endtime="20230504 14:34:30.135"/>
+</kw>
+<status status="NOT RUN" starttime="20230504 14:34:30.134" endtime="20230504 14:34:30.135"/>
+</branch>
+<status status="PASS" starttime="20230504 14:34:30.063" endtime="20230504 14:34:30.135"/>
+</try>
+<kw name="Go Back" library="Selenium2Library">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230504 14:34:30.135" endtime="20230504 14:34:30.672"/>
+</kw>
+<status status="PASS" starttime="20230504 14:34:28.563" endtime="20230504 14:34:30.672"/>
+</iter>
+<iter>
+<var name="${element}">Register here</var>
+<kw name="Click Link" library="Selenium2Library">
+<arg>${element}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230504 14:34:30.673" level="INFO">Clicking link 'Register here'.</msg>
+<status status="PASS" starttime="20230504 14:34:30.672" endtime="20230504 14:34:31.369"/>
+</kw>
+<kw name="Get Title" library="Selenium2Library">
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20230504 14:34:31.375" level="INFO">${title} = Register: Mercury Tours</msg>
+<status status="PASS" starttime="20230504 14:34:31.369" endtime="20230504 14:34:31.375"/>
+</kw>
+<try>
+<branch type="TRY">
+<kw name="Page Should Not Contain" library="Selenium2Library">
+<arg>Under Construction: Mercury Tours</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<msg timestamp="20230504 14:34:31.447" level="INFO">Current page does not contain text 'Under Construction: Mercury Tours'.</msg>
+<status status="PASS" starttime="20230504 14:34:31.375" endtime="20230504 14:34:31.448"/>
+</kw>
+<kw name="Catenate" library="BuiltIn">
+<var>${log}</var>
+<arg>${element}</arg>
+<arg>Link is working.</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<msg timestamp="20230504 14:34:31.448" level="INFO">${log} = Register here Link is working.</msg>
+<status status="PASS" starttime="20230504 14:34:31.448" endtime="20230504 14:34:31.449"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${log}.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230504 14:34:31.449" endtime="20230504 14:34:31.450"/>
+</kw>
+<status status="PASS" starttime="20230504 14:34:31.375" endtime="20230504 14:34:31.450"/>
+</branch>
+<branch type="EXCEPT">
+<kw name="Catenate" library="BuiltIn">
+<var>${log}</var>
+<arg>${element}</arg>
+<arg>Link is under construction.</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="NOT RUN" starttime="20230504 14:34:31.450" endtime="20230504 14:34:31.450"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${log}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230504 14:34:31.451" endtime="20230504 14:34:31.451"/>
+</kw>
+<status status="NOT RUN" starttime="20230504 14:34:31.450" endtime="20230504 14:34:31.451"/>
+</branch>
+<status status="PASS" starttime="20230504 14:34:31.375" endtime="20230504 14:34:31.451"/>
+</try>
+<kw name="Go Back" library="Selenium2Library">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230504 14:34:31.451" endtime="20230504 14:34:32.020"/>
+</kw>
+<status status="PASS" starttime="20230504 14:34:30.672" endtime="20230504 14:34:32.021"/>
+</iter>
+<iter>
+<var name="${element}">Business Travel @ About.com</var>
+<kw name="Click Link" library="Selenium2Library">
+<arg>${element}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230504 14:34:32.022" level="INFO">Clicking link 'Business Travel @ About.com'.</msg>
+<status status="PASS" starttime="20230504 14:34:32.021" endtime="20230504 14:34:32.395"/>
+</kw>
+<kw name="Get Title" library="Selenium2Library">
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20230504 14:34:32.404" level="INFO">${title} = businesstravel.about.com</msg>
+<status status="PASS" starttime="20230504 14:34:32.396" endtime="20230504 14:34:32.404"/>
+</kw>
+<try>
+<branch type="TRY">
+<kw name="Page Should Not Contain" library="Selenium2Library">
+<arg>Under Construction: Mercury Tours</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<msg timestamp="20230504 14:34:32.427" level="INFO">Current page does not contain text 'Under Construction: Mercury Tours'.</msg>
+<status status="PASS" starttime="20230504 14:34:32.405" endtime="20230504 14:34:32.427"/>
+</kw>
+<kw name="Catenate" library="BuiltIn">
+<var>${log}</var>
+<arg>${element}</arg>
+<arg>Link is working.</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<msg timestamp="20230504 14:34:32.428" level="INFO">${log} = Business Travel @ About.com Link is working.</msg>
+<status status="PASS" starttime="20230504 14:34:32.428" endtime="20230504 14:34:32.428"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${log}.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230504 14:34:32.428" endtime="20230504 14:34:32.429"/>
+</kw>
+<status status="PASS" starttime="20230504 14:34:32.404" endtime="20230504 14:34:32.429"/>
+</branch>
+<branch type="EXCEPT">
+<kw name="Catenate" library="BuiltIn">
+<var>${log}</var>
+<arg>${element}</arg>
+<arg>Link is under construction.</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="NOT RUN" starttime="20230504 14:34:32.429" endtime="20230504 14:34:32.429"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${log}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230504 14:34:32.430" endtime="20230504 14:34:32.430"/>
+</kw>
+<status status="NOT RUN" starttime="20230504 14:34:32.429" endtime="20230504 14:34:32.430"/>
+</branch>
+<status status="PASS" starttime="20230504 14:34:32.404" endtime="20230504 14:34:32.430"/>
+</try>
+<kw name="Go Back" library="Selenium2Library">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230504 14:34:32.430" endtime="20230504 14:34:33.062"/>
+</kw>
+<status status="PASS" starttime="20230504 14:34:32.021" endtime="20230504 14:34:33.063"/>
+</iter>
+<iter>
+<var name="${element}">Salon Travel</var>
+<kw name="Click Link" library="Selenium2Library">
+<arg>${element}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230504 14:34:33.064" level="INFO">Clicking link 'Salon Travel'.</msg>
+<status status="PASS" starttime="20230504 14:34:33.063" endtime="20230504 14:34:38.813"/>
+</kw>
+<kw name="Get Title" library="Selenium2Library">
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20230504 14:34:38.833" level="INFO">${title} = Tripadvisor: Over a billion reviews &amp; contributions for Hotels, Attractions, Restaurants, and more</msg>
+<status status="PASS" starttime="20230504 14:34:38.813" endtime="20230504 14:34:38.833"/>
+</kw>
+<try>
+<branch type="TRY">
+<kw name="Page Should Not Contain" library="Selenium2Library">
+<arg>Under Construction: Mercury Tours</arg>
+<doc>Verifies the current page does not contain ``text``.</doc>
+<msg timestamp="20230504 14:34:38.918" level="INFO">Current page does not contain text 'Under Construction: Mercury Tours'.</msg>
+<status status="PASS" starttime="20230504 14:34:38.834" endtime="20230504 14:34:38.918"/>
+</kw>
+<kw name="Catenate" library="BuiltIn">
+<var>${log}</var>
+<arg>${element}</arg>
+<arg>Link is working.</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<msg timestamp="20230504 14:34:38.918" level="INFO">${log} = Salon Travel Link is working.</msg>
+<status status="PASS" starttime="20230504 14:34:38.918" endtime="20230504 14:34:38.919"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${log}.</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230504 14:34:38.919" endtime="20230504 14:34:38.919"/>
+</kw>
+<status status="PASS" starttime="20230504 14:34:38.833" endtime="20230504 14:34:38.920"/>
+</branch>
+<branch type="EXCEPT">
+<kw name="Catenate" library="BuiltIn">
+<var>${log}</var>
+<arg>${element}</arg>
+<arg>Link is under construction.</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="NOT RUN" starttime="20230504 14:34:38.920" endtime="20230504 14:34:38.920"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${log}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230504 14:34:38.920" endtime="20230504 14:34:38.920"/>
+</kw>
+<status status="NOT RUN" starttime="20230504 14:34:38.920" endtime="20230504 14:34:38.921"/>
+</branch>
+<status status="PASS" starttime="20230504 14:34:38.833" endtime="20230504 14:34:38.921"/>
+</try>
+<kw name="Go Back" library="Selenium2Library">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230504 14:34:38.921" endtime="20230504 14:34:50.237"/>
+</kw>
+<status status="PASS" starttime="20230504 14:34:33.063" endtime="20230504 14:34:50.238"/>
+</iter>
+<status status="PASS" starttime="20230504 14:34:12.827" endtime="20230504 14:34:50.238"/>
 </for>
-<status status="FAIL" starttime="20230504 10:49:05.615" endtime="20230504 10:49:07.469">StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
-  (Session info: MicrosoftEdge=112.0.1722.58)
-Stacktrace:
-Backtrace:
-	GetHandleVerifier [0x00007FF6AEFDDF92+60274]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF6AEF6EBF2+818946]
-	(No symbol) [0x00007FF6AEBFDFAE]
-	(No symbol) [0x00007FF6AEC01C5D]
-	(No symbol) [0x00007FF6AEC018D9]
-	(No symbol) [0x00007FF6AEC01D30]
-	(No symbol) [0x00007FF6AEC395C7]
-	(No symbol) [0x00007FF6AEC5F56A]
-	(No symbol) [0x00007FF6AEC32751]
-	(No symbol) [0x00007FF6AEC32621]
-	(No symbol) [0x00007FF6AEC5F8A0]
-	(No symbol) [0x00007FF6AEC32751]
-	(No symbol) [0x00007FF6AEC7891C]
-	(No symbol) [0x00007FF6AEC5F343]
-    [ Message content over the limit has been removed. ]
-	Microsoft::Applications::Events::EventProperties::SetLevel [0x00007FF6AEE727D7+1593703]
-	Microsoft::Applications::Events::EventProperties::SetLevel [0x00007FF6AED1AC5D+185837]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF6AEEAFD47+36951]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF6AEEA7E55+4453]
-	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF6AF1AFDB3+1319011]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF6AEF76CAC+851900]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF6AEF72D14+835620]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF6AEF72E6C+835964]
-	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF6AEF68A41+793937]
-	BaseThreadInitThunk [0x00007FF91EFB7614+20]
-	RtlUserThreadStart [0x00007FF920E826A1+33]</status>
+<status status="PASS" starttime="20230504 14:34:12.528" endtime="20230504 14:34:50.238"/>
 </test>
 <doc>Find broken link</doc>
-<status status="FAIL" starttime="20230504 10:48:54.194" endtime="20230504 10:49:07.480"/>
+<status status="PASS" starttime="20230504 14:34:01.395" endtime="20230504 14:34:50.240"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="12 - Find broken link">12 - Find broken link</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="12 - Find broken link">12 - Find broken link</stat>
 </suite>
 </statistics>
 <errors>

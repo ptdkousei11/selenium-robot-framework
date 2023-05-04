@@ -1,42 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20230504 15:50:59.205" rpa="false" schemaversion="3">
-<suite id="s1" name="15 - Scroll page" source="d:\ptdat-batch40\selenium-robot-framework\Selenium WebDriver Basics Tutorial\15 - Scroll page.robot">
-<test id="s1-t1" name="Scroll with javascript" line="17">
-<kw name="Open URL">
-<kw name="Open Browser" library="Selenium2Library">
+<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20230504 16:46:56.547" rpa="false" schemaversion="3">
+<suite id="s1" name="3 - Select Radio Button And Checkbox" source="d:\ptdat-batch40\selenium-robot-framework\selenium webdriver basics tutorial\3 - select radio button and checkbox.robot">
+<kw name="Open URL" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
 <arg>${URL}</arg>
 <arg>edge</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230504 15:50:59.527" level="INFO">Opening browser 'edge' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
-<status status="PASS" starttime="20230504 15:50:59.527" endtime="20230504 15:51:12.832"/>
+<msg timestamp="20230504 16:46:56.985" level="INFO">Opening browser 'edge' to base url 'https://demo.guru99.com/test/radio.html'.</msg>
+<status status="PASS" starttime="20230504 16:46:56.984" endtime="20230504 16:47:04.213"/>
 </kw>
-<status status="PASS" starttime="20230504 15:50:59.526" endtime="20230504 15:51:12.833"/>
+<status status="PASS" starttime="20230504 16:46:56.944" endtime="20230504 16:47:04.214"/>
 </kw>
-<kw name="Maximize Browser Window" library="Selenium2Library">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20230504 15:51:12.834" endtime="20230504 15:51:12.979"/>
+<test id="s1-t1" name="Radio button select" line="14">
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>webform</arg>
+<arg>Option 1</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20230504 16:47:04.215" level="INFO">Selecting 'Option 1' from radio button 'webform'.</msg>
+<status status="PASS" starttime="20230504 16:47:04.215" endtime="20230504 16:47:04.310"/>
 </kw>
-<kw name="Execute Javascript" library="Selenium2Library">
-<arg>window.scrollTo(0,1500)</arg>
-<doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20230504 15:51:12.981" level="INFO">Executing JavaScript:
-window.scrollTo(0,1500)
-Without any arguments.</msg>
-<status status="PASS" starttime="20230504 15:51:12.980" endtime="20230504 15:51:12.991"/>
+<kw name="Radio Button Should Be Set To" library="SeleniumLibrary">
+<arg>webform</arg>
+<arg>Option 1</arg>
+<doc>Verifies radio button group ``group_name`` is set to ``value``.</doc>
+<msg timestamp="20230504 16:47:04.312" level="INFO">Verifying radio button 'webform' has selection 'Option 1'.</msg>
+<status status="PASS" starttime="20230504 16:47:04.311" endtime="20230504 16:47:04.345"/>
 </kw>
-<status status="PASS" starttime="20230504 15:50:59.525" endtime="20230504 15:51:12.993"/>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>webform</arg>
+<arg>Option 2</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20230504 16:47:04.346" level="INFO">Selecting 'Option 2' from radio button 'webform'.</msg>
+<status status="PASS" starttime="20230504 16:47:04.346" endtime="20230504 16:47:04.400"/>
+</kw>
+<kw name="Radio Button Should Be Set To" library="SeleniumLibrary">
+<arg>webform</arg>
+<arg>Option 2</arg>
+<doc>Verifies radio button group ``group_name`` is set to ``value``.</doc>
+<msg timestamp="20230504 16:47:04.402" level="INFO">Verifying radio button 'webform' has selection 'Option 2'.</msg>
+<status status="PASS" starttime="20230504 16:47:04.401" endtime="20230504 16:47:04.434"/>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>webform</arg>
+<arg>Option 3</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20230504 16:47:04.436" level="INFO">Selecting 'Option 3' from radio button 'webform'.</msg>
+<status status="PASS" starttime="20230504 16:47:04.435" endtime="20230504 16:47:04.494"/>
+</kw>
+<kw name="Radio Button Should Be Set To" library="SeleniumLibrary">
+<arg>webform</arg>
+<arg>Option 3</arg>
+<doc>Verifies radio button group ``group_name`` is set to ``value``.</doc>
+<msg timestamp="20230504 16:47:04.495" level="INFO">Verifying radio button 'webform' has selection 'Option 3'.</msg>
+<status status="PASS" starttime="20230504 16:47:04.495" endtime="20230504 16:47:04.527"/>
+</kw>
+<status status="PASS" starttime="20230504 16:47:04.214" endtime="20230504 16:47:04.531"/>
 </test>
-<doc>Scroll page</doc>
-<status status="PASS" starttime="20230504 15:50:59.212" endtime="20230504 15:51:12.999"/>
+<test id="s1-t2" name="CheckBox select" line="24">
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>id:vfb-6-0</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20230504 16:47:04.534" level="INFO">Selecting checkbox 'id:vfb-6-0'.</msg>
+<status status="PASS" starttime="20230504 16:47:04.533" endtime="20230504 16:47:04.602"/>
+</kw>
+<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
+<arg>id:vfb-6-0</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<msg timestamp="20230504 16:47:04.603" level="INFO">Verifying checkbox 'id:vfb-6-0' is selected.</msg>
+<status status="PASS" starttime="20230504 16:47:04.602" endtime="20230504 16:47:04.643"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>id:vfb-6-1</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20230504 16:47:04.645" level="INFO">Selecting checkbox 'id:vfb-6-1'.</msg>
+<status status="PASS" starttime="20230504 16:47:04.645" endtime="20230504 16:47:04.725"/>
+</kw>
+<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
+<arg>id:vfb-6-1</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<msg timestamp="20230504 16:47:04.726" level="INFO">Verifying checkbox 'id:vfb-6-1' is selected.</msg>
+<status status="PASS" starttime="20230504 16:47:04.726" endtime="20230504 16:47:04.752"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>id:vfb-6-2</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20230504 16:47:04.754" level="INFO">Selecting checkbox 'id:vfb-6-2'.</msg>
+<status status="PASS" starttime="20230504 16:47:04.753" endtime="20230504 16:47:04.817"/>
+</kw>
+<kw name="Checkbox Should Be Selected" library="SeleniumLibrary">
+<arg>id:vfb-6-2</arg>
+<doc>Verifies checkbox ``locator`` is selected/checked.</doc>
+<msg timestamp="20230504 16:47:04.819" level="INFO">Verifying checkbox 'id:vfb-6-2' is selected.</msg>
+<status status="PASS" starttime="20230504 16:47:04.818" endtime="20230504 16:47:04.839"/>
+</kw>
+<status status="PASS" starttime="20230504 16:47:04.532" endtime="20230504 16:47:04.844"/>
+</test>
+<doc>Select Radio Button and CheckBox</doc>
+<status status="PASS" starttime="20230504 16:46:56.554" endtime="20230504 16:47:04.846"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="15 - Scroll page">15 - Scroll page</stat>
+<stat pass="2" fail="0" skip="0" id="s1" name="3 - Select Radio Button And Checkbox">3 - Select Radio Button And Checkbox</stat>
 </suite>
 </statistics>
 <errors>

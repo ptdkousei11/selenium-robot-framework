@@ -1,52 +1,164 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20230428 15:12:16.106" rpa="false" schemaversion="3">
-<suite id="s1" name="1 - Find Element(s)" source="d:\ptdat-batch40\selenium-robot-framework\Selenium WebDriver Basics Tutorial\1 - Find Element(s).robot">
+<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20230504 10:48:54.187" rpa="false" schemaversion="3">
+<suite id="s1" name="12 - Find broken link" source="d:\ptdat-batch40\selenium-robot-framework\Selenium WebDriver Basics Tutorial\12 - Find broken link.robot">
 <kw name="Open URL" type="SETUP">
-<kw name="Open Browser" library="SeleniumLibrary">
+<kw name="Open Browser" library="Selenium2Library">
 <arg>${URL}</arg>
 <arg>edge</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230428 15:12:16.418" level="INFO">Opening browser 'edge' to base url 'https://demo.guru99.com/test/ajax.html'.</msg>
-<status status="PASS" starttime="20230428 15:12:16.418" endtime="20230428 15:12:26.506"/>
+<msg timestamp="20230504 10:48:54.497" level="INFO">Opening browser 'edge' to base url 'https://demo.guru99.com/test/newtours/'.</msg>
+<status status="PASS" starttime="20230504 10:48:54.496" endtime="20230504 10:49:05.615"/>
 </kw>
-<status status="PASS" starttime="20230428 15:12:16.417" endtime="20230428 15:12:26.506"/>
+<status status="PASS" starttime="20230504 10:48:54.495" endtime="20230504 10:49:05.615"/>
 </kw>
-<test id="s1-t1" name="Click &quot;Yes&quot; button" line="15">
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>id:yes</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230428 15:12:26.508" level="INFO">Clicking element 'id:yes'.</msg>
-<status status="PASS" starttime="20230428 15:12:26.507" endtime="20230428 15:12:26.565"/>
+<test id="s1-t1" name="Find broken link" line="15">
+<kw name="Get WebElements" library="Selenium2Library">
+<var>${links}</var>
+<arg>//tbody/tr/td/table/tbody/tr/td//child::a</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<msg timestamp="20230504 10:49:05.634" level="INFO">${links} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="e2eb06fa42f7d18396400ae870604f2e", element="4daa406f-0fe9-4a0a-b11f-7a53043104c3")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (sessi...</msg>
+<status status="PASS" starttime="20230504 10:49:05.616" endtime="20230504 10:49:05.635"/>
 </kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>id:buttoncheck</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230428 15:12:26.566" level="INFO">Clicking element 'id:buttoncheck'.</msg>
-<status status="PASS" starttime="20230428 15:12:26.566" endtime="20230428 15:12:26.618"/>
+<kw name="Log" library="BuiltIn">
+<arg>${links}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230504 10:49:05.636" level="INFO">[&lt;selenium.webdriver.remote.webelement.WebElement (session="e2eb06fa42f7d18396400ae870604f2e", element="4daa406f-0fe9-4a0a-b11f-7a53043104c3")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="e2eb06fa42f7d18396400ae870604f2e", element="38311bc1-94dd-40bd-a938-1daf5c2ac8be")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="e2eb06fa42f7d18396400ae870604f2e", element="5d362904-9902-4462-9310-fb3a2dc25cb6")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="e2eb06fa42f7d18396400ae870604f2e", element="0135eeab-430f-41bf-a279-eb7940b473eb")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="e2eb06fa42f7d18396400ae870604f2e", element="3a810dc4-89ca-4cee-8b0c-9cf3e8337bc7")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="e2eb06fa42f7d18396400ae870604f2e", element="3bde8fa4-0def-43b2-aa8b-fe78d5ee3e67")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="e2eb06fa42f7d18396400ae870604f2e", element="7c19b1a3-7d86-43c7-b24b-8f59a2cf5956")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="e2eb06fa42f7d18396400ae870604f2e", element="e8e447a1-1417-467a-8af8-277550250055")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="e2eb06fa42f7d18396400ae870604f2e", element="e34030af-3919-40f2-abb7-933475dedc5e")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="e2eb06fa42f7d18396400ae870604f2e", element="2e68ed90-908b-4814-a185-1e8b32a4c4ed")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="e2eb06fa42f7d18396400ae870604f2e", element="212abf90-53a8-4081-a5c5-d0ec427a9c0c")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="e2eb06fa42f7d18396400ae870604f2e", element="3c688fe9-a536-4cdb-9251-0b9b2d10915c")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="e2eb06fa42f7d18396400ae870604f2e", element="3d13e5a3-ddf6-4ba9-a32a-7861e33bd879")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="e2eb06fa42f7d18396400ae870604f2e", element="31881c92-cd40-4030-811b-8ca260dc07b1")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="e2eb06fa42f7d18396400ae870604f2e", element="2617c3d7-346b-433c-a120-ee3445831d39")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="e2eb06fa42f7d18396400ae870604f2e", element="5ed76d16-9151-4169-9ba4-96ffc73b8034")&gt;]</msg>
+<status status="PASS" starttime="20230504 10:49:05.635" endtime="20230504 10:49:05.636"/>
 </kw>
-<kw name="Page Should Contain" library="SeleniumLibrary">
-<arg>Radio button is checked and it's value is Yes</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20230428 15:12:26.633" level="INFO">Current page contains text 'Radio button is checked and it's value is Yes'.</msg>
-<status status="PASS" starttime="20230428 15:12:26.619" endtime="20230428 15:12:26.634"/>
+<for flavor="IN">
+<var>${link}</var>
+<value>@{links}</value>
+<iter>
+<var name="${link}">&lt;selenium.webdriver.remote.webelement.WebElement (session="e2eb06fa42f7d18396400ae870604f2e", element="4daa406f-0fe9-4a0a-b11f-7a53043104c3")&gt;</var>
+<kw name="Get Text" library="Selenium2Library">
+<var>${text}</var>
+<arg>${link}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230504 10:49:05.656" level="INFO">${text} = Home</msg>
+<status status="PASS" starttime="20230504 10:49:05.638" endtime="20230504 10:49:05.656"/>
 </kw>
-<status status="PASS" starttime="20230428 15:12:26.506" endtime="20230428 15:12:26.634"/>
+<kw name="Convert To String" library="BuiltIn">
+<var>${a}</var>
+<arg>${text}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<msg timestamp="20230504 10:49:05.657" level="INFO">${a} = Home</msg>
+<status status="PASS" starttime="20230504 10:49:05.657" endtime="20230504 10:49:05.657"/>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<arg>${a}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20230504 10:49:05.658" level="INFO">Clicking link 'Home'.</msg>
+<status status="PASS" starttime="20230504 10:49:05.657" endtime="20230504 10:49:06.792"/>
+</kw>
+<kw name="Go Back" library="Selenium2Library">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" starttime="20230504 10:49:06.792" endtime="20230504 10:49:07.344"/>
+</kw>
+<status status="PASS" starttime="20230504 10:49:05.637" endtime="20230504 10:49:07.344"/>
+</iter>
+<iter>
+<var name="${link}">&lt;selenium.webdriver.remote.webelement.WebElement (session="e2eb06fa42f7d18396400ae870604f2e", element="38311bc1-94dd-40bd-a938-1daf5c2ac8be")&gt;</var>
+<kw name="Get Text" library="Selenium2Library">
+<var>${text}</var>
+<arg>${link}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230504 10:49:07.458" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230504 10:49:07.458" level="FAIL">StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: MicrosoftEdge=112.0.1722.58)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00007FF6AEFDDF92+60274]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF6AEF6EBF2+818946]
+	(No symbol) [0x00007FF6AEBFDFAE]
+	(No symbol) [0x00007FF6AEC01C5D]
+	(No symbol) [0x00007FF6AEC018D9]
+	(No symbol) [0x00007FF6AEC01D30]
+	(No symbol) [0x00007FF6AEC395C7]
+	(No symbol) [0x00007FF6AEC5F56A]
+	(No symbol) [0x00007FF6AEC32751]
+	(No symbol) [0x00007FF6AEC32621]
+	(No symbol) [0x00007FF6AEC5F8A0]
+	(No symbol) [0x00007FF6AEC32751]
+	(No symbol) [0x00007FF6AEC7891C]
+	(No symbol) [0x00007FF6AEC5F343]
+	(No symbol) [0x00007FF6AEC31796]
+	(No symbol) [0x00007FF6AEC30975]
+	(No symbol) [0x00007FF6AEC31F04]
+	Microsoft::Applications::Events::EventProperties::SetLevel [0x00007FF6AEE727D7+1593703]
+	Microsoft::Applications::Events::EventProperties::SetLevel [0x00007FF6AED1AC5D+185837]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF6AEEAFD47+36951]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF6AEEA7E55+4453]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF6AF1AFDB3+1319011]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF6AEF76CAC+851900]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF6AEF72D14+835620]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF6AEF72E6C+835964]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF6AEF68A41+793937]
+	BaseThreadInitThunk [0x00007FF91EFB7614+20]
+	RtlUserThreadStart [0x00007FF920E826A1+33]
+</msg>
+<status status="FAIL" starttime="20230504 10:49:07.344" endtime="20230504 10:49:07.466"/>
+</kw>
+<kw name="Convert To String" library="BuiltIn">
+<var>${a}</var>
+<arg>${text}</arg>
+<doc>Converts the given item to a Unicode string.</doc>
+<status status="NOT RUN" starttime="20230504 10:49:07.467" endtime="20230504 10:49:07.467"/>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<arg>${a}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230504 10:49:07.467" endtime="20230504 10:49:07.467"/>
+</kw>
+<kw name="Go Back" library="Selenium2Library">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="NOT RUN" starttime="20230504 10:49:07.467" endtime="20230504 10:49:07.468"/>
+</kw>
+<status status="FAIL" starttime="20230504 10:49:07.344" endtime="20230504 10:49:07.468"/>
+</iter>
+<status status="FAIL" starttime="20230504 10:49:05.637" endtime="20230504 10:49:07.468"/>
+</for>
+<status status="FAIL" starttime="20230504 10:49:05.615" endtime="20230504 10:49:07.469">StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: MicrosoftEdge=112.0.1722.58)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00007FF6AEFDDF92+60274]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF6AEF6EBF2+818946]
+	(No symbol) [0x00007FF6AEBFDFAE]
+	(No symbol) [0x00007FF6AEC01C5D]
+	(No symbol) [0x00007FF6AEC018D9]
+	(No symbol) [0x00007FF6AEC01D30]
+	(No symbol) [0x00007FF6AEC395C7]
+	(No symbol) [0x00007FF6AEC5F56A]
+	(No symbol) [0x00007FF6AEC32751]
+	(No symbol) [0x00007FF6AEC32621]
+	(No symbol) [0x00007FF6AEC5F8A0]
+	(No symbol) [0x00007FF6AEC32751]
+	(No symbol) [0x00007FF6AEC7891C]
+	(No symbol) [0x00007FF6AEC5F343]
+    [ Message content over the limit has been removed. ]
+	Microsoft::Applications::Events::EventProperties::SetLevel [0x00007FF6AEE727D7+1593703]
+	Microsoft::Applications::Events::EventProperties::SetLevel [0x00007FF6AED1AC5D+185837]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF6AEEAFD47+36951]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF6AEEA7E55+4453]
+	Microsoft::Applications::Events::ILogManager::DispatchEventBroadcast [0x00007FF6AF1AFDB3+1319011]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF6AEF76CAC+851900]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF6AEF72D14+835620]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF6AEF72E6C+835964]
+	Microsoft::Applications::Events::EventProperty::~EventProperty [0x00007FF6AEF68A41+793937]
+	BaseThreadInitThunk [0x00007FF91EFB7614+20]
+	RtlUserThreadStart [0x00007FF920E826A1+33]</status>
 </test>
-<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20230428 15:12:26.637" endtime="20230428 15:12:29.148"/>
-</kw>
-<doc>Find Element(s)</doc>
-<status status="PASS" starttime="20230428 15:12:16.113" endtime="20230428 15:12:29.148"/>
+<doc>Find broken link</doc>
+<status status="FAIL" starttime="20230504 10:48:54.194" endtime="20230504 10:49:07.480"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="1 - Find Element(s)">1 - Find Element(s)</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="12 - Find broken link">12 - Find broken link</stat>
 </suite>
 </statistics>
 <errors>

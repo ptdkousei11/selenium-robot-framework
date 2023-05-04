@@ -16,9 +16,9 @@ Click on Image
     Input Text    id:password    secret_sauce
     Click Button    id:login-button
     Title Should Be    Swag Labs
-    Click Image    Sauce Labs Backpack
+    Click Image    Sauce Labs Bike Light
     Page Should Contain    Back to products
-    Page Should Contain    Sauce Labs Backpack
+    Page Should Contain    Sauce Labs Bike Light
 
 
 *** Keywords ***

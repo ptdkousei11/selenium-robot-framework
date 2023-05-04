@@ -14,6 +14,11 @@ Scroll page
     Scroll Element Into View    //table[@name='BookTable']
     Capture Element Screenshot    //table[@name='BookTable']
 
+Scroll with javascript
+    Open URL
+    Maximize Browser Window
+    Execute Javascript    window.scrollTo(0,1500)
+
 
 *** Keywords ***
 Open URL

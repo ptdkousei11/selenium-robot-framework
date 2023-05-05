@@ -23,17 +23,13 @@ Buy and Checkout
     Add Bikelight To Cart
     Add Onesie To Cart
     Go To Cart Page
-    #Sleep    3 seconds
     Checkout
     Enter First Name    Kousei
     Enter Last Name    Arima
     Enter Zip Code    22381
-    #Sleep    3 seconds
     Click Continue Button
-    #Sleep    3 seconds
     Click Button    Finish
     Page Should Contain    Your order has been dispatched
-    #Sleep    3 seconds
 
 
 *** Keywords ***

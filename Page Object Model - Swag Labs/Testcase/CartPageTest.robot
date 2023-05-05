@@ -4,7 +4,6 @@ Library             RPA.Robocorp.WorkItems
 Resource            ../Keyword/LoginPage.robot
 Resource            ../Keyword/InventoryPage.robot
 Resource            ../Keyword/CartPage.robot
-Variables           ../Locator/Locator.py
 
 Suite Setup         Login To Page
 Suite Teardown      Close My Browser

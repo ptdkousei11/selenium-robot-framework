@@ -21,7 +21,7 @@ Login Test
     Verify Login Successful
     Close My Browser
 
-Login Fail Test
+Login Test - Fail
     Open My Browser    ${URL}    ${Browser}
     Enter Username    ${username-lock}
     Enter Password    ${password}

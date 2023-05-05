@@ -3,7 +3,6 @@ Library             Selenium2Library
 Library             RPA.Robocorp.WorkItems
 Resource            ../Keyword/LoginPage.robot
 Resource            ../Keyword/InventoryPage.robot
-Variables           ../Locator/Locator.py
 
 Suite Setup         Login To Page
 Suite Teardown      Close My Browser
@@ -42,17 +41,17 @@ Add Item To Cart
         Verify Item Add To Cart Successful    ${item-name}
     END
 
-Remove Item Form Cart
+Remove Item From Inventory Page
     Add Backpack To Cart
     Add Bikelight To Cart
     Add Bolt T-Shirt To Cart
     Add Fleece Jacket To Cart
     Add Onesie To Cart
-    Remove Backpack From Cart
-    Remove Bikelight From Cart
-    Remove Bolt T-Shirt From Cart
-    Remove Fleece Jacket From Cart
-    Remove Onesie From Cart
+    Remove Backpack From Inventory
+    Remove Bikelight From Inventory
+    Remove Bolt T-Shirt From Inventory
+    Remove Fleece Jacket From Inventory
+    Remove Onesie From Inventory
     Page Should Not Contain    Remove
 
 Logout Page

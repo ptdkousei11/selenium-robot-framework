@@ -1,7 +1,7 @@
 *** Settings ***
 Library         Selenium2Library
 Library         RPA.Desktop
-Variables       ../Locator/Locator.py
+Variables       ../Locator/Inventory.py
 
 
 *** Keywords ***
@@ -29,19 +29,19 @@ Add Fleece Jacket To Cart
 Add Onesie To Cart
     Click Button    ${addOnesie}
 
-Remove Backpack From Cart
+Remove Backpack From Inventory
     Click Button    ${removeBackpack}
 
-Remove Bikelight From Cart
+Remove Bikelight From Inventory
     Click Button    ${removeBikelight}
 
-Remove Bolt T-Shirt From Cart
+Remove Bolt T-Shirt From Inventory
     Click Button    ${removeBoltTshirt}
 
-Remove Fleece Jacket From Cart
+Remove Fleece Jacket From Inventory
     Click Button    ${removeFleecejacket}
 
-Remove Onesie From Cart
+Remove Onesie From Inventory
     Click Button    ${removeOnesie}
 
 Verify Item Add To Cart Successful

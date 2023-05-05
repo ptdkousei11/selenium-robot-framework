@@ -1,6 +1,6 @@
 *** Settings ***
 Library         Selenium2Library
-Variables       ../Locator/Locator.py
+Variables       ../Locator/Cart.py
 
 
 *** Keywords ***
